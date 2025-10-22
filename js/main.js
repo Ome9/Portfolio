@@ -3,16 +3,21 @@
 // Using anime.js, xterm.js, particles.js, typed.js, and AOS
 // ========================================
 
+// Wait for all libraries to load
+window.addEventListener('load', function() {
+
 // ========================================
 // Initialize AOS (Animate On Scroll)
 // ========================================
-AOS.init({
-    duration: 800,
-    once: false,
-    offset: 100,
-    easing: 'ease-out-cubic',
-    mirror: true
-});
+if (typeof AOS !== 'undefined') {
+    AOS.init({
+        duration: 800,
+        once: false,
+        offset: 100,
+        easing: 'ease-out-cubic',
+        mirror: true
+    });
+}
 
 // ========================================
 // Theme Toggle Functionality
@@ -33,12 +38,14 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', newTheme);
     
     // Animate theme toggle button
-    anime({
-        targets: themeToggle,
-        rotate: '1turn',
-        duration: 500,
-        easing: 'easeInOutQuad'
-    });
+    if (typeof anime !== 'undefined') {
+        anime({
+            targets: themeToggle,
+            rotate: '1turn',
+            duration: 500,
+            easing: 'easeInOutQuad'
+        });
+    }
     
     // Reinitialize particles with new theme colors
     initParticles();
@@ -55,7 +62,7 @@ mobileMenuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     
     // Animate menu items
-    if (navMenu.classList.contains('active')) {
+    if (navMenu.classList.contains('active') && typeof anime !== 'undefined') {
         anime({
             targets: '.nav-menu li',
             translateX: [50, 0],
@@ -272,39 +279,40 @@ initParticles();
 // ========================================
 // Xterm.js Terminal Configuration
 // ========================================
-const terminal = new Terminal({
-    cursorBlink: true,
-    cursorStyle: 'block',
-    fontFamily: 'JetBrains Mono, monospace',
-    fontSize: 13,
-    rows: 16,
-    cols: 60,
-    scrollback: 0,
-    theme: {
-        background: 'transparent',
-        foreground: '#e4e7eb',
-        cursor: '#00ff88',
-        black: '#0a0e27',
-        red: '#ff0055',
-        green: '#00ff88',
-        yellow: '#ffbd2e',
-        blue: '#00d9ff',
-        magenta: '#ff00ff',
-        cyan: '#00ffff',
-        white: '#e4e7eb',
-        brightBlack: '#4a5568',
-        brightRed: '#ff5f87',
-        brightGreen: '#5fff87',
-        brightYellow: '#ffff5f',
-        brightBlue: '#5fafff',
-        brightMagenta: '#ff5fff',
-        brightCyan: '#5fffff',
-        brightWhite: '#ffffff'
-    },
-    allowTransparency: true,
-    convertEol: true,
-    disableStdin: true
-});
+if (typeof Terminal !== 'undefined') {
+    const terminal = new Terminal({
+        cursorBlink: true,
+        cursorStyle: 'block',
+        fontFamily: 'JetBrains Mono, monospace',
+        fontSize: 13,
+        rows: 16,
+        cols: 60,
+        scrollback: 0,
+        theme: {
+            background: 'transparent',
+            foreground: '#e4e7eb',
+            cursor: '#00ff88',
+            black: '#0a0e27',
+            red: '#ff0055',
+            green: '#00ff88',
+            yellow: '#ffbd2e',
+            blue: '#00d9ff',
+            magenta: '#ff00ff',
+            cyan: '#00ffff',
+            white: '#e4e7eb',
+            brightBlack: '#4a5568',
+            brightRed: '#ff5f87',
+            brightGreen: '#5fff87',
+            brightYellow: '#ffff5f',
+            brightBlue: '#5fafff',
+            brightMagenta: '#ff5fff',
+            brightCyan: '#5fffff',
+            brightWhite: '#ffffff'
+        },
+        allowTransparency: true,
+        convertEol: true,
+        disableStdin: true
+    });
 
 terminal.open(document.getElementById('terminal'));
 
@@ -343,23 +351,27 @@ function typeCommand() {
 // Start terminal animation after a short delay
 setTimeout(typeCommand, 1000);
 
+} // End of Terminal check
+
 // ========================================
 // Typed.js for Hero Section
 // ========================================
-const typed = new Typed('#typed-text', {
-    strings: [
-        'AI/ML Engineer',
-        'Cybersecurity Enthusiast',
-        'Full-Stack Developer',
-        'Problem Solver',
-        'Tech Innovator'
-    ],
-    typeSpeed: 80,
-    backSpeed: 50,
-    backDelay: 2000,
-    loop: true,
-    showCursor: false
-});
+if (typeof Typed !== 'undefined') {
+    const typed = new Typed('#typed-text', {
+        strings: [
+            'AI/ML Engineer',
+            'Cybersecurity Enthusiast',
+            'Full-Stack Developer',
+            'Problem Solver',
+            'Tech Innovator'
+        ],
+        typeSpeed: 80,
+        backSpeed: 50,
+        backDelay: 2000,
+        loop: true,
+        showCursor: false
+    });
+}
 
 // ========================================
 // Projects Data & Rendering
@@ -529,42 +541,42 @@ function renderExperience() {
 // ========================================
 // Anime.js Animations
 // ========================================
+if (typeof anime !== 'undefined') {
+    // Animate hero section elements on load
+    anime({
+        targets: '.hero-text h1',
+        opacity: [0, 1],
+        translateY: [50, 0],
+        duration: 1000,
+        easing: 'easeOutQuad'
+    });
 
-// Animate hero section elements on load
-anime({
-    targets: '.hero-text h1',
-    opacity: [0, 1],
-    translateY: [50, 0],
-    duration: 1000,
-    easing: 'easeOutQuad'
-});
+    anime({
+        targets: '.hero-text .typed-container',
+        opacity: [0, 1],
+        translateY: [30, 0],
+        duration: 1000,
+        delay: 200,
+        easing: 'easeOutQuad'
+    });
 
-anime({
-    targets: '.hero-text .typed-container',
-    opacity: [0, 1],
-    translateY: [30, 0],
-    duration: 1000,
-    delay: 200,
-    easing: 'easeOutQuad'
-});
+    anime({
+        targets: '.hero-text .hero-description',
+        opacity: [0, 1],
+        translateY: [30, 0],
+        duration: 1000,
+        delay: 400,
+        easing: 'easeOutQuad'
+    });
 
-anime({
-    targets: '.hero-text .hero-description',
-    opacity: [0, 1],
-    translateY: [30, 0],
-    duration: 1000,
-    delay: 400,
-    easing: 'easeOutQuad'
-});
-
-anime({
-    targets: '.hero-buttons .btn',
-    opacity: [0, 1],
-    translateY: [30, 0],
-    duration: 1000,
-    delay: anime.stagger(100, { start: 600 }),
-    easing: 'easeOutQuad'
-});
+    anime({
+        targets: '.hero-buttons .btn',
+        opacity: [0, 1],
+        translateY: [30, 0],
+        duration: 1000,
+        delay: anime.stagger(100, { start: 600 }),
+        easing: 'easeOutQuad'
+    });
 
 // Animate scroll indicator
 anime({
@@ -664,43 +676,26 @@ anime({
     easing: 'easeInOutSine'
 });
 
+    // Reduce animations on low-end devices
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        anime.speed = 0.5;
+    }
+} // End of anime check
+
 // ========================================
 // Initialize Content
 // ========================================
 renderProjects();
 renderExperience();
 
-// ========================================
-// Performance Optimization
-// ========================================
-
-// Lazy load images if any
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.add('loaded');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-    
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
-    });
-}
-
-// Reduce animations on low-end devices
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    anime.speed = 0.5;
-}
-
 // Update AOS on dynamic content changes
-setTimeout(() => {
-    AOS.refresh();
-}, 500);
+if (typeof AOS !== 'undefined') {
+    setTimeout(() => {
+        AOS.refresh();
+    }, 500);
+}
 
 console.log('%c🚀 Portfolio loaded successfully!', 'color: #00ff88; font-size: 16px; font-weight: bold;');
 console.log('%c💻 Built with anime.js, xterm.js & particles.js', 'color: #00d9ff; font-size: 12px;');
+
+}); // End of window.load event listener
