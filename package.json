@@ -1,0 +1,31 @@
+{
+  "name": "omkar-portfolio",
+  "version": "1.0.0",
+  "description": "AI/ML and Cybersecurity themed portfolio for Omkar Choudhury",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=index.html",
+    "start": "live-server --port=3000",
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "@xterm/xterm": "^5.5.0",
+    "animejs": "^4.2.1",
+    "aos": "^2.3.4",
+    "particles.js": "^2.0.0",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "keywords": [
+    "portfolio",
+    "AI",
+    "ML",
+    "cybersecurity",
+    "resume"
+  ],
+  "author": "Omkar Choudhury",
+  "license": "MIT"
+}

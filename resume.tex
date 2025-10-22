@@ -1,0 +1,124 @@
+\documentclass[a4paper,10pt]{article}
+
+% --- Encoding & layout ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.6in]{geometry}
+
+% --- Style ---
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+
+% Section title style
+\definecolor{brand}{HTML}{0A66C2}
+\titleformat{\section}{\large\bfseries\color{brand}}{}{0pt}{}[\titlerule]
+
+% Compact lists (tighter spacing)
+\setlist[itemize]{leftmargin=*, topsep=0pt, itemsep=0.5pt, parsep=0pt}
+
+% Slightly tighter section spacing
+\titlespacing*{\section}{0pt}{0.8em}{0.5em}
+
+% No page numbers
+\pagestyle{empty}
+
+\begin{document}
+
+% =========================
+% Header
+% =========================
+\begin{center}
+    {\Huge \textbf{Omkar Choudhury}}\\[3pt]
+    Odisha, India \quad|\quad \faPhone\ +91\,9692797119 \quad|\quad
+    \faEnvelope\ \href{mailto:ome99.choudhury@gmail.com}{ome99.choudhury@gmail.com}\\[1pt]
+    \faLinkedin\ \href{https://www.linkedin.com/in/omkar-choudhury-5b072a169}{LinkedIn} \quad|\quad
+    \faGithub\ \href{https://github.com/Ome9}{GitHub}
+\end{center}
+
+% =========================
+\section{Education}
+% =========================
+\vspace{4pt}
+\textbf{Vellore Institute of Technology (VIT)}, Vellore, Tamil Nadu \hfill \textit{Expected July 2026}\\
+Bachelor of Technology, Computer Science — Specialization in Information Security\\
+Cumulative GPA: 8.7/10\\
+\textbf{Relevant Coursework:} Ethical Hacking \& Penetration Testing, Offensive and Defensive Security
+
+% =========================
+\section{Technical Skills}
+% =========================
+\vspace{4pt}
+\textbf{Core Competencies:} Cybersecurity \& SIEM Deployment, Threat Detection \& Attack Simulation, Machine Learning \& Data Analysis, Risk Assessment\\
+\textbf{Languages:} Python, SQL, Bash\\
+\textbf{Frameworks \& Libraries:} TensorFlow, Scikit-Learn, Pandas, NumPy, Matplotlib\\
+\textbf{Security \& SIEM Tools:} ELK Stack, Elastic SIEM, Atomic Red Team, Wireshark, Nmap, Metasploit, Ghidra\\
+\textbf{CTF \& Offensive Security:} Reverse Engineering, Binary Exploitation, Steganography, Forensics, Cryptography Challenges\\
+\textbf{Databases:} MongoDB, MySQL, CSV/JSON Data Processing\\
+\textbf{Platforms \& OS:} Kali Linux, Ubuntu Server, Windows Security Lab\\
+\textbf{Dev Tools:} Docker, Git, NGINX, Linux Server Administration
+
+% =========================
+\section{Work Experience}
+% =========================
+\vspace{4pt}
+\textbf{Backend Developer Intern} — \textit{TimeSlotter Technologies Private Limited} \hfill \textit{May 2025 -- July 2025}
+\vspace{6pt}
+\begin{itemize}
+    \item Engineered FastAPI appointment system serving 500+ daily bookings with JWT auth.
+    \item Built RESTful APIs handling 10,000+ requests/day with 99.5\% uptime via Docker.
+    \item Streamlined database migrations reducing deployment time by 75\%.
+\end{itemize}
+
+% =========================
+\section{Projects}
+% =========================
+\vspace{4pt}
+\textbf{Elastic-SIEM-Simulation – Security Information \& Event Management Lab} \hfill \href{https://github.com/Ome9/Elastic-SIEM-Simulation}{GitHub}
+\vspace{6pt}
+\begin{itemize}
+    \item Built SIEM lab processing 5,000+ logs/day from 15+ endpoints using Elastic Beats.
+    \item Created 5+ Kibana dashboards and 8+ detection rules, improving threat coverage by 40\%.
+    \item Automated 15+ MITRE ATT\&CK simulations, reducing detection time from 45 to 12 minutes.
+\end{itemize}
+\vspace{5pt}
+
+\textbf{AegisVision – AI-Powered Surveillance System for Anomaly Detection} \hfill \href{https://github.com/Ome9/AEGISVISION}{GitHub}
+\vspace{6pt}
+\begin{itemize}
+    \item Developed hybrid YOLO + VideoMAE anomaly detection achieving 92\% accuracy.
+    \item Built Streamlit dashboard processing 24/7 feeds, reducing manual monitoring by 60\%.
+    \item Achieved 0.87 ROC-AUC on Avenue \& UCSD datasets, outperforming baselines by 15\%.
+\end{itemize}
+\vspace{5pt}
+
+\textbf{NetProtect – Network Security and Threat Detection Platform} \hfill \href{https://github.com/Ome9/NetProtect}{GitHub}
+\vspace{6pt}
+\begin{itemize}
+    \item Built modular platform capturing 50GB+ daily traffic with real-time packet analysis.
+    \item Integrated signature-based IDS with ML models detecting 98\% of known threats.
+    \item Created responsive dashboards enabling 3x faster threat identification for SOC teams.
+\end{itemize}
+
+% =========================
+\section{Achievements}
+% =========================
+\vspace{4pt}
+\textbf{UST GenCys CTF} — \textit{National Finalist} \hfill \textit{2025}\\
+Secured finalist position among top 50 teams in national cybersecurity CTF.
+\vspace{10pt}
+
+\textbf{Carnegie Mellon PicoCTF} — \textit{Global Top 100} \hfill \textit{2025}\\
+Ranked 87th globally among 70,000+ participants in largest student competition.
+
+% =========================
+\section{Certifications}
+% =========================
+\vspace{4pt}
+\textbf{Google:} Artificial Intelligence using TensorFlow \hfill \href{https://drive.google.com/file/d/1x9bzsKFt6Vh4PIY0GukX6EKBPkh4GONf/view?usp=drive_link}{link}\\
+\textbf{Microsoft:} Azure AI Fundamentals \hfill \href{https://drive.google.com/file/d/1iVqL7rlVRdTd4fY1ey_zNzZVXFid5dBL/view?usp=drive_link}{link}\\
+\textbf{Oracle:} OCI 2025 Generative AI Professional \hfill \href{https://drive.google.com/file/d/1U4Rq1T7V1OTNx_2xALiqgn7UMsTH-kFP/view?usp=drive_link}{link}\\
+
+\end{document}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omkar Choudhury - Cybersecurity & AI/ML Professional specializing in SIEM, Threat Detection, and Security Analysis">
+    <meta name="keywords" content="Cybersecurity, SIEM, AI, Machine Learning, Security Analysis, Threat Detection">
+    <meta name="author" content="Omkar Choudhury">
+    <title>Omkar Choudhury | Cybersecurity & AI/ML Professional</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>O</text></svg>">
+    
+    <link rel="stylesheet" href="./node_modules/@xterm/xterm/css/xterm.css">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <div id="particles-js"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">Omkar Choudhury</div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 3a1 1 0 011 1v1a1 1 0 11-2 0V4a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+                        </svg>
+                        <svg class="moon-icon" width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1 data-aos="fade-up">Omkar Choudhury</h1>
+                    <div class="role-text" data-aos="fade-up" data-aos-delay="100">
+                        <span id="typed-text"></span><span class="cursor">_</span>
+                    </div>
+                    <p class="hero-lead" data-aos="fade-up" data-aos-delay="200">
+                        Cybersecurity & SIEM specialist with expertise in threat detection, machine learning, 
+                        and offensive security
+                    </p>
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-item">
+                            <div class="stat-num">87<sup>th</sup></div>
+                            <div class="stat-label">PicoCTF Global</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">Top 50</div>
+                            <div class="stat-label">UST GenCys</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">8.7</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                    </div>
+                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="./WResume_OmkarChoudhury.pdf" target="_blank" class="btn btn-outline">View Resume</a>
+                    </div>
+                </div>
+                <div class="hero-terminal" data-aos="fade-left" data-aos-delay="200">
+                    <div class="term-header">
+                        <div class="term-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="term-title">omkar@vit:~</div>
+                    </div>
+                    <div id="terminal" class="term-body"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-alt">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">
+                <span class="num">01</span>About
+            </h2>
+            <div class="about-content" data-aos="fade-up">
+                <p>I'm pursuing <strong>B.Tech in Computer Science</strong> with specialization in <strong>Information Security</strong> at <strong>Vellore Institute of Technology (VIT)</strong>, maintaining a <strong>CGPA of 8.7/10</strong>.</p>
+                <p>My expertise spans <strong>SIEM deployment</strong>, <strong>threat detection</strong>, and <strong>machine learning</strong> for security applications. I've built comprehensive security labs processing thousands of events daily, developed AI-powered anomaly detection systems achieving 92% accuracy, and competed in top-tier CTF competitions globally.</p>
+                <p>Currently focused on bridging offensive and defensive security through intelligent automation and advanced threat intelligence.</p>
+            </div>
+            
+            <div class="about-cards-grid" data-aos="fade-up">
+                <div class="info-box">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                        Education
+                    </h3>
+                    <div class="info-item">
+                        <strong>Vellore Institute of Technology</strong>
+                        <span>B.Tech Computer Science</span>
+                        <span>Information Security</span>
+                        <span class="highlight">CGPA: 8.7/10</span>
+                        <span class="muted">Expected July 2026</span>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                        Achievements
+                    </h3>
+                    <div class="achievement-item">
+                        <strong>PicoCTF 2025</strong>
+                        <span>Ranked 87th globally among 70,000+ participants</span>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>UST GenCys CTF 2025</strong>
+                        <span>National Finalist - Top 50 teams</span>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Certifications
+                    </h3>
+                    <ul class="cert-list">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1x9bzsKFt6Vh4PIY0GukX6EKBPkh4GONf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                                Google: AI using TensorFlow
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1iVqL7rlVRdTd4fY1ey_zNzZVXFid5dBL/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                                Microsoft: Azure AI Fundamentals
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1U4Rq1T7V1OTNx_2xALiqgn7UMsTH-kFP/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                                Oracle: OCI 2025 GenAI Professional
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-main">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">
+                <span class="num">02</span>Experience
+            </h2>
+            <div class="exp-card" data-aos="fade-up">
+                <div class="exp-top">
+                    <div>
+                        <h3>Backend Developer Intern</h3>
+                        <div class="exp-company">TimeSlotter Technologies Private Limited</div>
+                    </div>
+                    <div class="exp-period">May 2025 - July 2025</div>
+                </div>
+                <ul class="exp-points">
+                    <li>Engineered FastAPI appointment system serving <strong>500+ daily bookings</strong> with JWT authentication</li>
+                    <li>Built RESTful APIs handling <strong>10,000+ requests/day</strong> with <strong>99.5% uptime</strong> via Docker</li>
+                    <li>Streamlined database migrations reducing deployment time by <strong>75%</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-alt">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">
+                <span class="num">03</span>Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18.5c-4.28-1.01-7.5-4.73-7.5-8.5V8.3l7.5-3.5 7.5 3.5V12c0 3.77-3.22 7.49-7.5 8.5z"/>
+                        </svg>
+                        <div>
+                            <h3>Elastic-SIEM-Simulation</h3>
+                            <a href="https://github.com/Ome9/Elastic-SIEM-Simulation" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub" aria-label="View Elastic-SIEM-Simulation on GitHub">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p>SIEM lab processing <strong>5,000+ logs/day</strong> from 15+ endpoints using Elastic Beats with automated MITRE ATT&CK simulations</p>
+                    <ul class="project-metrics">
+                        <li>5+ Kibana dashboards & 8+ detection rules</li>
+                        <li>40% improvement in threat coverage</li>
+                        <li>Detection time reduced from 45 to 12 minutes</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Elastic Stack</span>
+                        <span>SIEM</span>
+                        <span>Kibana</span>
+                        <span>MITRE ATT&CK</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        </svg>
+                        <div>
+                            <h3>AegisVision</h3>
+                            <a href="https://github.com/Ome9/AEGISVISION" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub" aria-label="View AegisVision on GitHub">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p>AI-powered surveillance using hybrid <strong>YOLO + VideoMAE</strong> for real-time anomaly detection</p>
+                    <ul class="project-metrics">
+                        <li>92% accuracy on anomaly detection</li>
+                        <li>0.87 ROC-AUC, 15% above baseline</li>
+                        <li>60% reduction in manual monitoring</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>YOLO</span>
+                        <span>VideoMAE</span>
+                        <span>Streamlit</span>
+                        <span>Computer Vision</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                        <div>
+                            <h3>NetProtect</h3>
+                            <a href="https://github.com/Ome9/NetProtect" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub" aria-label="View NetProtect on GitHub">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p>Network security platform with real-time packet analysis, signature-based IDS, and ML threat detection</p>
+                    <ul class="project-metrics">
+                        <li>50GB+ daily traffic capture & analysis</li>
+                        <li>98% detection rate for known threats</li>
+                        <li>3x faster threat identification</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>IDS</span>
+                        <span>ML Detection</span>
+                        <span>Packet Analysis</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-main">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">
+                <span class="num">04</span>Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-group" data-aos="fade-up">
+                    <h3>Core Competencies</h3>
+                    <div class="skill-tags">
+                        <span>Cybersecurity & SIEM Deployment</span>
+                        <span>Threat Detection & Attack Simulation</span>
+                        <span>Machine Learning & Data Analysis</span>
+                        <span>Risk Assessment</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="50">
+                    <h3>Security & SIEM Tools</h3>
+                    <div class="skill-tags">
+                        <span>ELK Stack</span>
+                        <span>Elastic SIEM</span>
+                        <span>Atomic Red Team</span>
+                        <span>Wireshark</span>
+                        <span>Nmap</span>
+                        <span>Metasploit</span>
+                        <span>Ghidra</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Programming & ML</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Bash</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-Learn</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="150">
+                    <h3>CTF & Offensive Security</h3>
+                    <div class="skill-tags">
+                        <span>Reverse Engineering</span>
+                        <span>Binary Exploitation</span>
+                        <span>Steganography</span>
+                        <span>Forensics</span>
+                        <span>Cryptography</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Infrastructure & DevOps</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Git</span>
+                        <span>NGINX</span>
+                        <span>Linux Administration</span>
+                        <span>Kali Linux</span>
+                        <span>Ubuntu Server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-alt">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">
+                <span class="num">05</span>Get in Touch
+            </h2>
+            <p class="contact-lead" data-aos="fade-up" data-aos-delay="100">
+                Open to discussing cybersecurity projects, research collaboration, 
+                or opportunities in threat detection and security analysis
+            </p>
+            <div class="contact-grid" data-aos="fade-up" data-aos-delay="200">
+                <a href="mailto:ome99.choudhury@gmail.com" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <div>
+                        <h3>Email</h3>
+                        <p>ome99.choudhury@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/omkar-choudhury-5b072a169" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Ome9" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>View projects</p>
+                    </div>
+                </a>
+                <div class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 9692797119</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Omkar Choudhury. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Ome9" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/omkar-choudhury-5b072a169" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./node_modules/@xterm/xterm/lib/xterm.js"></script>
+    <script src="./node_modules/particles.js/particles.js"></script>
+    <script src="./node_modules/animejs/dist/bundles/anime.umd.min.js"></script>
+    <script src="./node_modules/typed.js/dist/typed.umd.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
